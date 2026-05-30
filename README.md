@@ -22,8 +22,6 @@ Where the Birds Are explores **where birders watch**, **which regions have the h
 | Counties / regions | 11 |
 | Important Bird Areas | 8 |
 
-> **Note:** Observation counts on the portfolio page reflect the filtered NL dataset used for this project. The interactive dashboard may display additional aggregates depending on filtering and data prep.
-
 ---
 
 ## Deliverables
@@ -67,5 +65,3 @@ Where the Birds Are explores **where birders watch**, **which regions have the h
 - **Data:** [eBird Basic Dataset](https://ebird.org/science/use-ebird-data) (2025), filtered to Newfoundland & Labrador
 
 ---
-
-## Project structure
