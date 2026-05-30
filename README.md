@@ -1,53 +1,71 @@
 # Where the Birds Are
 
-A data visualization of birding across Newfoundland & Labrador, built for the Johnson Geo Centre using the eBird 2025 dataset.
+**A data portrait of birding across Newfoundland & Labrador · 2025 field season**
 
-![Infographic](infographic.png)
+Built for the [Johnson Geo Centre](https://www.geocentre.ca/) (St. John's, NL). This project turns citizen-science eBird records into a print-ready infographic, three standalone charts, and an interactive Plotly Dash dashboard.
 
-## What This Is
+<img width="4800" height="7200" alt="infographic(36)" src="https://github.com/user-attachments/assets/49e693c9-ded1-41f3-bbaa-65f1c546dc2e" />
 
-A 36×24 inch infographic poster and an interactive Dash dashboard — both generated from `birds.csv` with Python. The poster has three visualizations:
-
-1. **Geographic Hotspot Map** — every birding locality, sized by observations, coloured by species diversity
-2. **County Species Richness** — bar chart ranking all 11 counties by unique species
-3. **IBA Species Composition** — stacked bars showing bird-group breakdown at the top 8 Important Bird Areas
-
-## Quick Start
-
-```bash
-pip install pandas numpy matplotlib geopandas pillow requests dash plotly
-
-# Generate the poster — open in Jupyter and run all cells
-jupyter notebook infographic.ipynb
-
-# Run the dashboard
-python dashboard.py
-```
-
-## Files
-
-```
-birds.csv            eBird 2025 data for NL
-infographic.ipynb     Poster notebook (single cell)
-dashboard.py         Interactive Dash dashboard
-portfolio.html       Project portfolio page
-```
-
-## Key Stats
-
-- **27,000+** observations
-- **280+** unique species
-- **1,400+** birding localities
-- **~65%** of observations from the Avalon Peninsula alone
-
-## Built With
-
-Python · Matplotlib · Pandas · GeoPandas · Pillow · Plotly Dash
-
-## Data
-
-[eBird Basic Dataset (2025)](https://ebird.org) — Cornell Lab of Ornithology. Map boundaries from [Natural Earth](https://www.naturalearthdata.com/).
+<img width="2550" height="1263" alt="Dashboard" src="https://github.com/user-attachments/assets/b7ae4fa4-312d-4349-a640-c3999e79541e" />
 
 ---
 
-*Produced for the Johnson Geo Centre, St. John's, NL · 2025*
+## Overview
+
+Where the Birds Are explores **where birders watch**, **which regions have the highest species diversity**, and **how species composition varies across Important Bird Areas (IBAs)** in Newfoundland and Labrador.
+
+| Metric | Value |
+|--------|-------|
+| Observations | 27,000+ |
+| Unique species | 280+ |
+| Birding localities | 1,400+ |
+| Counties / regions | 11 |
+| Important Bird Areas | 8 |
+
+> **Note:** Observation counts on the portfolio page reflect the filtered NL dataset used for this project. The interactive dashboard may display additional aggregates depending on filtering and data prep.
+
+---
+
+## Deliverables
+
+### 1. Infographic poster
+- **36×24 in** landscape, **200 DPI**, print-ready
+- Built with **Python** and **Matplotlib**
+- Combines all three core visualizations into one narrative layout
+
+### 2. Interactive dashboard
+- **Plotly Dash** web app with dark UI
+- Linked filters across map and charts (category, month range, county)
+- **Panels:**
+  - **Observation Hotspots** — bubble map (size = observations, color = species richness)
+  - **Species Richness by County** — horizontal bar chart with median reference
+  - **Seasonal Activity** — multi-line trends by bird group
+
+### 3. Standalone charts
+
+| Chart | Description |
+|-------|-------------|
+| **Geographic Hotspots** | Scatter map of NL localities; marker size = observations, color = diversity |
+| **County Species Richness** | Horizontal bar chart ranking all 11 counties |
+| **IBA Species Composition** | Stacked bars for top 8 IBAs by bird group |
+
+---
+
+## Key findings
+
+- **~65%** of observations come from the **Avalon Peninsula** (access + birder density).
+- **11 counties** show significant variation in species richness; **Avalon leads**.
+- **8 IBAs** have distinct ecological profiles (coastal vs inland).
+- **Songbirds** dominate most IBAs; **seabirds** lead in key coastal zones.
+
+---
+
+## Tech stack
+
+- **Python** · **Matplotlib** · **Pandas** · **NumPy** · **GeoPandas** · **PIL**
+- **Plotly Dash** · **Jupyter Notebook**
+- **Data:** [eBird Basic Dataset](https://ebird.org/science/use-ebird-data) (2025), filtered to Newfoundland & Labrador
+
+---
+
+## Project structure
