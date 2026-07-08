@@ -9,10 +9,12 @@ Built for the **[Johnson Geo Centre](https://www.geocentre.ca/)** in St. John's,
 ## 🖼️ Visualizations
 
 ### Infographic Poster
-<img width="4800" height="7200" alt="Where the Birds Are infographic poster" src="https://github.com/user-attachments/assets/4557d3e9-b45f-41fa-8c9a-cc32e72a7a5b" />
+<img width="4800" height="7200" alt="infographic" src="https://github.com/user-attachments/assets/992d2db3-ec29-47da-9aed-96a3fe5c541f" />
+
 
 ### Interactive Dashboard
-<img width="1417" height="697" alt="Where the Birds Are interactive dashboard" src="https://github.com/user-attachments/assets/68fae6a0-a190-4a8b-a673-bee18672781d" />
+<img width="1417" height="697" alt="dashboard" src="https://github.com/user-attachments/assets/65d9227f-3fe1-4f2d-a1ab-0447392552be" />
+
 
 ---
 
